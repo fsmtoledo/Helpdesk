@@ -1,0 +1,27 @@
+<%= form_with(model: descricao, local: true) do |form| %>
+  <% if descricao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(descricao.errors.count, "error") %> prohibited this descricao from being saved:</h2>
+
+      <ul>
+      <% descricao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :departamento %>
+    <%= form.text_field :departamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

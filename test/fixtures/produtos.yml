@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  departamento: MyString
+  equipamento: MyString
+  descricao: MyText
+  data: 2019-03-15 19:41:27
+
+two:
+  nome: MyString
+  departamento: MyString
+  equipamento: MyString
+  descricao: MyText
+  data: 2019-03-15 19:41:27

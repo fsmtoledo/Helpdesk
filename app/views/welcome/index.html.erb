@@ -1,0 +1,30 @@
+<body class="background"></body>
+
+<ul class="login">
+    <h1>HELP-DESK</h1>
+    <%= current_member.email %><br>
+    <%= link_to "Sair", destroy_member_session_path, method: :delete %>
+</ul>
+
+<aside class="navegacao-site">
+<nav>
+    <ul>
+    <%= menu_item "Sobre Mim", welcome_sobremim_path %><br>
+        <%= menu_item "Portifolio", welcome_portifolio_path %><br>
+        <%= menu_item "Contato", welcome_contato_path %><br>
+    </ul>
+</nav>
+</aside>
+
+<div class="borda-direita">
+    <li><a href="https://github.com/fsmtoledo" class="github" data-tooltip="Veja meus projetos opensource">
+    Github
+</a></li><br>
+    <li><a href="https://www.linkedin.com/in/franklin-martins-208287163/" class="linkedin" data-tooltip="Veja meu currículo">
+    LinkedIn
+</a></li><br>
+</div>
+
+<footer class="rodape-pagina">
+    &copy; Franklin Martins 2019;
+</footer>
